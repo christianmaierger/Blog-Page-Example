@@ -1,40 +1,71 @@
 .container {
     display: grid;
-    grid-template-rows: 60% 40%;
     grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 70% 10%;
     grid-template-areas: "hd" "sd" "main" "ft";
-    border: 2px solid rgb(0, 47, 255);
-}
-
-@media(min-width:500px) {
-    .container {
-        display: grid;
-        grid-template-columns: 25% 37% 37%;
-        grid-template-rows: 30% 70%;
-        grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
-        border: 2px solid red;
-    }
+    border: 2px solid yellow;
 }
 
 .nestedGrid {
     display: grid;
     width: auto;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    justify-items: center;
+    align-content: center;
+    gap: 1vh;
+    margin-bottom: 5vh;
 }
 
 .nestedGrid>* {
     border: 2px solid aquamarine;
 }
 
-.fbox {
-    width: 200px;
-    height: 200px;
+@media(min-width:500px) {
+    .container {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
+        border: 2px solid red;
+    }
+    .nestedGrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        gap: 1vw;
+        margin-bottom: 10vh;
+    }
 }
 
-#picture-one {
-    background-image: url('../images/1bulding.jpg');
-    background-size: stretch;
+@media(min-width:1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 20% 75% 5%;
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
+        border: 2px solid green;
+    }
+    .nestedGrid {
+        display: grid;
+        width: auto;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+        margin-bottom: 10vh;
+        margin-right: 5vw;
+        border: 2px solid green;
+    }
+}
+
+#text-content {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.fbox {
+    width: 20vw;
+    height: 20vh;
+    border: 1px solid red;
 }
 
 .box {
@@ -43,12 +74,7 @@
 }
 
 .header {
-    /* row start/column start/ row end/ column end */
     grid-area: hd;
-}
-
-.footer {
-    grid-area: ft;
 }
 
 .sidebar {
@@ -57,4 +83,8 @@
 
 .content {
     grid-area: main;
+}
+
+.footer {
+    grid-area: ft;
 }
