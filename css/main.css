@@ -1,5 +1,9 @@
 @import "index.css";
 @import "blog.css";
+body {
+    margin: 0;
+}
+
 .container {
     display: grid;
     width: auto;
@@ -22,6 +26,7 @@
     grid-area: main;
     background: #1E90FF;
     padding-left: 3vw;
+    padding-bottom: 3vw;
     border-left: 4px inset white;
     border-top: 4px inset white;
     border-bottom: 3px inset white;
@@ -43,30 +48,34 @@
 }
 
 #xing {
-    height: 6vh;
-    width: 6vw;
-    background-size: auto 100%;
+    height: 3vh;
+    width: 3vw;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url("../images/xing.png");
 }
 
 #linkdedin {
-    height: 6vh;
-    width: 6vw;
-    background-size: auto 100%;
+    height: 3vh;
+    width: 5vw;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url("../images/li.png");
 }
 
 #twitter {
-    height: 6vh;
-    width: 6vw;
-    background-size: auto 100%;
+    height: 3vh;
+    width: 5vw;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url("../images/twitter.png");
 }
 
 #facebook {
-    height: 6vh;
-    width: 6vw;
-    background-size: auto 100%;
+    height: 3vh;
+    width: 5vw;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url("../images/facebook.png");
 }
 
@@ -98,6 +107,34 @@
         grid-area: ft;
         background: #e0b535;
     }
+    #xing {
+        height: 5vh;
+        width: 5vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../images/xing.png");
+    }
+    #linkdedin {
+        height: 5vh;
+        width: 5vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../images/li.png");
+    }
+    #twitter {
+        height: 5vh;
+        width: 5vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../images/twitter.png");
+    }
+    #facebook {
+        height: 5vh;
+        width: 5vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../images/facebook.png");
+    }
 }
 
 @media(min-width:1200px) {
@@ -107,10 +144,37 @@
         grid-template-columns: 20% 75% 5%;
         grid-template-rows: 20% auto;
         grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
-        border: 2px solid green;
     }
     .header {
         grid-area: hd;
         background: linear-gradient(110deg, #fdcd3b 20%, #1E90FF 30%);
+    }
+    #xing {
+        height: 6vh;
+        width: 3vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../images/xing.png");
+    }
+    #linkdedin {
+        height: 6vh;
+        width: 3vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../images/li.png");
+    }
+    #twitter {
+        height: 6vh;
+        width: 3vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../images/twitter.png");
+    }
+    #facebook {
+        height: 6vh;
+        width: 3vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../images/facebook.png");
     }
 }
