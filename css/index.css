@@ -1,0 +1,72 @@
+.nestedGrid {
+    display: grid;
+    width: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-content: center;
+    gap: 1vh;
+    margin-bottom: 2vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+
+.nestedGrid>* {
+    border: 2px solid aquamarine;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main-img {
+    width="50vw" height="auto";
+}
+
+@media screen and (min-width:500px) {
+    .nestedGrid {
+        display: grid;
+        width: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        gap: 1vw;
+        justify-items: center;
+        margin-bottom: 10vh;
+        margin-bottom: 3vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        border: 2px solid green;
+    }
+    main-img {
+        width="100vw" height="auto";
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .nestedGrid {
+        display: grid;
+        width: auto;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        justify-items: center;
+        margin-bottom: 3vh;
+        margin-right: 5vw;
+        margin-left: 3vw;
+        border: 2px solid green;
+    }
+    main-img {
+        width="1000vw" height="auto";
+    }
+}
+
+.fbox {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid red;
+}
+
+#text-content {
+    margin-bottom: 2vh;
+}
