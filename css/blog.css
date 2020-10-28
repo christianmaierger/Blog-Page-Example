@@ -2,7 +2,7 @@
     display: grid;
     width: auto;
     grid-template-columns: 100%;
-    grid-template-rows: 20% auto auto auto auto;
+    grid-template-rows: 20% auto;
     grid-template-areas: "hd" "sd" "feat" "main" "ft";
     border: 2px solid yellow;
 }
@@ -20,17 +20,13 @@
     margin-left: 3vw;
 }
 
-.nestedGrid>* {
-    border: 2px solid aquamarine;
-}
-
 @media(min-width:500px) {
     #blog-container {
         display: grid;
         width: auto;
-        grid-template-columns: 100%;
+        grid-template-columns: 15% 37% 37%;
         grid-template-rows: 20% auto auto auto auto;
-        grid-template-areas: "hd" "sd feat" "sd main" "ft";
+        grid-template-areas: "hd hd" "sd feat" "sd main" "ft ft";
         border: 2px solid yellow;
     }
     .nestedGrid {
@@ -48,6 +44,14 @@
 }
 
 @media(min-width:1200px) {
+    #blog-container {
+        display: grid;
+        width: auto;
+        grid-template-columns: 10% 75% 5%;
+        grid-template-rows: 20% auto;
+        grid-template-areas: "hd hd" "sd feat" "sd main" "ft ft";
+        border: 2px solid yellow;
+    }
     .nestedGrid {
         display: grid;
         width: auto;
@@ -67,6 +71,7 @@
 
 .feature {
     grid-area: feat;
+    background: yellowgreen;
 }
 
 #text-content {

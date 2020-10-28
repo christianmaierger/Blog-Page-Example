@@ -37,6 +37,13 @@ body {
     background: #c29c2d;
 }
 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2vw;
+}
+
 .flex-buttons {
     display: flex;
     padding-top: 2vh;
@@ -83,13 +90,13 @@ body {
     .container {
         display: grid;
         width: auto;
-        grid-template-columns: 25% 37% 37%;
+        grid-template-columns: 15% 37% 37%;
         grid-template-rows: 20% auto auto;
         grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
     }
     .header {
         grid-area: hd;
-        background: linear-gradient(110deg, #fdcd3b 26%, #1E90FF 38%);
+        background: linear-gradient(110deg, #fdcd3b 23%, #1E90FF 33%);
     }
     .sidebar {
         grid-area: sd;
@@ -141,13 +148,13 @@ body {
     .container {
         display: grid;
         width: auto;
-        grid-template-columns: 20% 75% 5%;
+        grid-template-columns: 10% 75% 5%;
         grid-template-rows: 20% auto;
         grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
     }
     .header {
         grid-area: hd;
-        background: linear-gradient(110deg, #fdcd3b 20%, #1E90FF 30%);
+        background: linear-gradient(110deg, #fdcd3b 15%, #1E90FF 25%);
     }
     #xing {
         height: 6vh;

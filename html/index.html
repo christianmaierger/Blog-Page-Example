@@ -12,7 +12,10 @@
     <div class="container">
         <div class="header box">Header</div>
         <div class="sidebar box">
-            <h1>Blog Posts</h1><a href="post.html">Most Recent Post</a>
+            <h1>Blog Posts</h1>
+            <a href="post.html">Most Recent Post</a>
+            <a href="post.html">Post Of The Month</a>
+            <a href="post.html">Editors Choice</a>
         </div>
         <div class="content box">
             <h2>Content</h2>
@@ -40,34 +43,31 @@
             </p>
             <div class="flex-cards">
                 <div class="card">
-                    <img src="img_avatar.png" alt="Avatar" style="width:100%">
-                    <div class="card-container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
-                    </div>
+                    <img class="cardfoto" src="../images/card1.jpg" alt="">
+                    <h1>Most Recent Post</h1>
+                    <p>Some text about the post..</p>
+                    <p><button>Read Now</button></p>
                 </div>
                 <div class="card">
-                    <img src="img_avatar2.png" alt="Avatar" style="width:100%">
-                    <div class="card-container">
-                        <h4><b>Erica Example</b></h4>
-                        <p>Architect & Engineer</p>
-                    </div>
+                    <img class="cardfoto" src="../images/card2.jpg" alt="">
+                    <h1>Post Of The Month</h1>
+                    <p>Some text about the post..</p>
+                    <p><button>Read Now</button></p>
                 </div>
                 <div class="card">
-                    <img src="img_avatar3.png" alt="Avatar" style="width:100%">
-                    <div class="card-container">
-                        <h4><b>Peter Placeholder</b></h4>
-                        <p>Architect & Engineer</p>
-                    </div>
+                    <img class="cardfoto" src="../images/card3.jpg" alt="">
+                    <h1>Editors Choice</h1>
+                    <p>Some text about the post..</p>
+                    <p><button>Read Now</button></p>
                 </div>
             </div>
         </div>
         <div class="footer box">
             <div class="flex-buttons">
-                <button id="xing" onclick="location.href='https://google.com'"></button>
-                <button id="linkedin"></button>
-                <button id="twitter"></button>
-                <button id="facebook"></button>
+                <button id="xing" onclick="window.open(this.href='https://xing.com')"></button>
+                <button id="linkdedin" onclick="window.open(this.href='https://linkedin.com')"></button>
+                <button id="twitter" onclick="window.open(this.href='https://twitter.com')"></button>
+                <button id="facebook" onclick="window.open(this.href='https://facebook.com')"></button>
             </div>
         </div>
 
