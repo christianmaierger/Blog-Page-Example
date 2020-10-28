@@ -32,6 +32,44 @@
     background: #c29c2d;
 }
 
+.flex-buttons {
+    display: flex;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 3vw;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.5vw;
+}
+
+#xing {
+    height: 6vh;
+    width: 6vw;
+    background-size: auto 100%;
+    background-image: url("../images/xing.png");
+}
+
+#linkdedin {
+    height: 6vh;
+    width: 6vw;
+    background-size: auto 100%;
+    background-image: url("../images/li.png");
+}
+
+#twitter {
+    height: 6vh;
+    width: 6vw;
+    background-size: auto 100%;
+    background-image: url("../images/twitter.png");
+}
+
+#facebook {
+    height: 6vh;
+    width: 6vw;
+    background-size: auto 100%;
+    background-image: url("../images/facebook.png");
+}
+
 @media(min-width:500px) {
     .container {
         display: grid;
