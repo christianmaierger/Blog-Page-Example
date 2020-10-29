@@ -8,7 +8,7 @@ body {
     display: grid;
     width: auto;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 10% auto auto auto;
+    grid-template-rows: 5% 10% auto auto auto;
     grid-template-areas: "hd" "sd" "main" "ft";
 }
 
@@ -24,11 +24,11 @@ body {
 
 .content {
     grid-area: main;
-    background: #1E90FF;
+    background: #57abff;
     padding-left: 3vw;
     padding-bottom: 3vw;
-    border-left: 4px inset white;
-    border-top: 4px inset white;
+    border-left: 4px solid #e0b535;
+    border-top: 4px solid #e0b535;
     border-bottom: 3px inset white;
 }
 
@@ -62,7 +62,6 @@ body {
     text-align: center;
     font-size: 40px;
     background-size: cover;
-    background-repeat: no-repeat;
     color: #126567;
     background-color: white;
 }
@@ -108,7 +107,7 @@ body {
         display: grid;
         width: auto;
         grid-template-columns: 15% 37% 37%;
-        grid-template-rows: 20% auto auto;
+        grid-template-rows: 10% auto auto;
         grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
     }
     .header {
@@ -117,15 +116,8 @@ body {
     }
     .sidebar {
         grid-area: sd;
-        border-top: 4px inset white;
+        border-top: 4px solid #e0b535;
         background: #fdcd3b;
-    }
-    .content {
-        grid-area: main;
-        background: #57abff;
-        border-left: 4px inset white;
-        border-top: 4px inset white;
-        border-bottom: 3px inset white;
     }
     .footer {
         grid-area: ft;
@@ -138,7 +130,7 @@ body {
         display: grid;
         width: auto;
         grid-template-columns: 10% 75% 5%;
-        grid-template-rows: 20% auto;
+        grid-template-rows: 10% auto;
         grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
     }
     .header {
