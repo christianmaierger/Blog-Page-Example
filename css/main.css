@@ -8,7 +8,7 @@ body {
     display: grid;
     width: auto;
     grid-template-columns: 100%;
-    grid-template-rows: 20% auto auto auto auto;
+    grid-template-rows: 10% 10% auto auto auto;
     grid-template-areas: "hd" "sd" "main" "ft";
 }
 
@@ -42,6 +42,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     gap: 2vw;
+    padding-left: 2vw;
 }
 
 .flex-buttons {
@@ -55,35 +56,51 @@ body {
 }
 
 #xing {
-    height: 3vh;
-    width: 3vw;
+    height: fit-content;
+    width: fit-content;
+    text-justify: center;
+    text-align: center;
+    font-size: 40px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../images/xing.png");
+    color: #126567;
+    background-color: white;
 }
 
 #linkdedin {
-    height: 3vh;
-    width: 5vw;
+    height: fit-content;
+    width: fit-content;
+    text-justify: center;
+    text-align: center;
+    font-size: 40px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../images/li.png");
+    color: #2867B2;
+    background-color: white;
 }
 
 #twitter {
-    height: 3vh;
-    width: 5vw;
+    height: fit-content;
+    width: fit-content;
+    text-justify: center;
+    text-align: center;
+    font-size: 40px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../images/twitter.png");
+    color: #1DA1F2;
+    background-color: white;
 }
 
 #facebook {
-    height: 3vh;
-    width: 5vw;
+    height: fit-content;
+    width: fit-content;
+    text-justify: center;
+    text-align: center;
+    font-size: 40px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../images/facebook.png");
+    color: #3b5998;
+    background-color: white;
 }
 
 @media(min-width:500px) {
@@ -105,7 +122,7 @@ body {
     }
     .content {
         grid-area: main;
-        background: #1E90FF;
+        background: #57abff;
         border-left: 4px inset white;
         border-top: 4px inset white;
         border-bottom: 3px inset white;
@@ -113,34 +130,6 @@ body {
     .footer {
         grid-area: ft;
         background: #e0b535;
-    }
-    #xing {
-        height: 5vh;
-        width: 5vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("../images/xing.png");
-    }
-    #linkdedin {
-        height: 5vh;
-        width: 5vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("../images/li.png");
-    }
-    #twitter {
-        height: 5vh;
-        width: 5vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("../images/twitter.png");
-    }
-    #facebook {
-        height: 5vh;
-        width: 5vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("../images/facebook.png");
     }
 }
 
@@ -155,33 +144,5 @@ body {
     .header {
         grid-area: hd;
         background: linear-gradient(110deg, #fdcd3b 15%, #1E90FF 25%);
-    }
-    #xing {
-        height: 6vh;
-        width: 3vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("../images/xing.png");
-    }
-    #linkdedin {
-        height: 6vh;
-        width: 3vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("../images/li.png");
-    }
-    #twitter {
-        height: 6vh;
-        width: 3vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("../images/twitter.png");
-    }
-    #facebook {
-        height: 6vh;
-        width: 3vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("../images/facebook.png");
     }
 }

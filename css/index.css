@@ -1,148 +1,150 @@
-.nestedGrid {
-    display: grid;
-    width: auto;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-content: center;
-    gap: 1vh;
-    margin-bottom: 2vh;
-    margin-right: 3vw;
-    margin-left: 3vw;
-}
-
-.nestedGrid>* {
-    border: 2px solid aquamarine;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-
-#main-img {
-    width: 80vw;
-    height: auto;
-    border: 2px solid aquamarine;
-}
-
-figcaption {
-    display: float;
-}
-
-.flex-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 2vw;
-}
-
-.card {
-    /* Add shadows to create the "card" effect */
-    min-width: 80vw;
-    min-height: 50vw;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border: 2px solid aquamarine;
-    position: relative;
-}
-
-
-/* On mouse-over, add a deeper shadow */
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card button {
-    position: absolute;
-    bottom: 10px;
-    right: 0px;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-.card button:hover {
-    opacity: 0.7;
-}
-
-.cardfoto {
-    width: 15vw;
-    height: auto;
-}
-
-
-/* Add some padding inside the card container */
-
-.container {
-    padding: 2px 16px;
-}
-
-@media screen and (min-width:500px) {
-    .nestedGrid {
-        display: grid;
-        width: auto;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        gap: 1vw;
-        justify-items: center;
-        margin-bottom: 10vh;
-        margin-bottom: 3vh;
-        margin-right: 5vw;
-        margin-left: 5vw;
-    }
-    #main-img {
-        width: 60vw;
-        height: auto;
-    }
-    .flex-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 2vw;
-    }
-    .card {
-        /* Add shadows to create the "card" effect */
-        width: auto;
-        height: auto;
-        min-width: none;
-        min-height: none;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .nestedGrid {
-        display: grid;
-        width: auto;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: auto;
-        justify-items: center;
-        margin-bottom: 3vh;
-        margin-right: 5vw;
-        margin-left: 3vw;
-    }
-    #main-img {
-        width: 70vw;
-        height: auto;
-    }
-}
-
-.fbox {
-    width: 100%;
-    height: 20vh;
-}
-
-#text-content {
-    margin-bottom: 2vh;
-}
+            .nestedGrid {
+                display: grid;
+                width: auto;
+                grid-template-columns: 100%;
+                grid-template-rows: auto;
+                justify-items: center;
+                align-content: center;
+                gap: 1vh;
+                padding-bottom: 2vh;
+                padding-right: 3vw;
+            }
+            
+            .nestedGrid>* {
+                border: 2px solid #e0b535;
+            }
+            
+            .flex-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+            }
+            
+            #main-img {
+                width: 80vw;
+                height: auto;
+                border: 2px solid #e0b535;
+            }
+            
+            figcaption {
+                display: float;
+            }
+            
+            .flex-cards {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                gap: 2vw;
+                padding-right: 2vw;
+            }
+            
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            .card {
+                text-align: center;
+                font-family: arial;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                transition: 0.3s;
+                border: 2px solid #e0b535;
+                position: relative;
+            }
+            
+            .card button {
+                position: absolute;
+                bottom: 10px;
+                right: 0px;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+            }
+            
+            .card button:hover {
+                opacity: 0.7;
+            }
+            
+            .cardfoto {
+                width: 100%;
+                height: auto;
+            }
+            
+            @media screen and (max-width: 400px) {
+                .flex-cards {
+                    width: 100%;
+                }
+                .card {
+                    min-width: 80vw;
+                    min-height: 70vw;
+                    margin: 2vw;
+                }
+            }
+            
+            @media screen and (min-width:500px) {
+                .nestedGrid {
+                    display: grid;
+                    width: auto;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: auto;
+                    gap: 2vw;
+                    justify-items: center;
+                    margin-bottom: 10vh;
+                    margin-bottom: 3vh;
+                    margin-right: 5vw;
+                    margin-left: 5vw;
+                }
+                #main-img {
+                    width: 65vw;
+                    height: auto;
+                }
+                .flex-cards {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    gap: 2vw;
+                }
+                .card {
+                    width: auto;
+                    height: auto;
+                    min-width: none;
+                    min-height: 30vw;
+                }
+            }
+            
+            @media screen and (min-width:1200px) {
+                .nestedGrid {
+                    display: grid;
+                    width: auto;
+                    grid-template-columns: 25% 25% 25% 25%;
+                    grid-template-rows: auto;
+                    justify-items: center;
+                    margin-bottom: 3vh;
+                    margin-right: 5vw;
+                    margin-left: 3vw;
+                }
+                #main-img {
+                    width: 70vw;
+                    height: auto;
+                }
+                .card {
+                    width: auto;
+                    height: auto;
+                    min-width: none;
+                    min-height: 25vw;
+                }
+            }
+            
+            .fbox {
+                width: 100%;
+                height: 20vh;
+            }
+            
+            #text-content {
+                margin-bottom: 2vh;
+            }
