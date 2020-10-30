@@ -1,6 +1,5 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
     margin: auto;
     text-align: center;
 }
@@ -94,8 +93,9 @@ video {
         margin-left: 5vw;
     }
     .card {
-        width: 10vw;
-        min-height: 30vh;
+        width: auto;
+        min-height: 25vh;
+        max-width: 10vw;
     }
     .nested-Grid>p {
         padding-right: 3vw;
@@ -108,7 +108,7 @@ video {
         width: auto;
         grid-template-columns: 10% auto;
         grid-template-rows: 100%;
-        gap: 40vw;
+        gap: 20vw;
         justify-items: auto;
         margin-bottom: 10vh;
         margin-bottom: 3vh;
@@ -116,8 +116,10 @@ video {
         margin-left: 5vw;
     }
     .card {
-        width: 5vw;
-        min-height: 10vh;
+        width: auto;
+        max-width: 35vw;
+        min-height: 8vh;
+        min-width: 20vw;
     }
 }
 

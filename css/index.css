@@ -89,7 +89,8 @@
                     width: 100%;
                 }
                 .card {
-                    min-width: 80vw;
+                    min-width: 15vw;
+                    max-width: 10vw;
                     min-height: 70vw;
                     margin: 2vw;
                 }

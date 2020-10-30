@@ -1,13 +1,10 @@
 @import "index.css";
 @import "blog.css";
-html,
+@import "buttons-and_logo.css";
 body {
     margin: 0;
 }
 
-
-}
-div.disabled {}
 .container {
     display: grid;
     width: auto;
@@ -15,14 +12,17 @@ div.disabled {}
     grid-template-rows: 5% 10% auto auto auto;
     grid-template-areas: "hd" "sd" "main" "ft";
 }
+
 .header {
     grid-area: hd;
     background: #1E90FF;
 }
+
 .sidebar {
     grid-area: sd;
     background: #fdcd3b;
 }
+
 .content {
     grid-area: main;
     background: #57abff;
@@ -32,10 +32,12 @@ div.disabled {}
     border-top: 4px solid #e0b535;
     border-bottom: 3px inset white;
 }
+
 .footer {
     grid-area: ft;
     background: #c29c2d;
 }
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -43,57 +45,8 @@ div.disabled {}
     gap: 2vw;
     padding-left: 2vw;
 }
-.flex-buttons {
-    display: flex;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    padding-left: 3vw;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 0.5vw;
-}
-#xing {
-    height: fit-content;
-    width: fit-content;
-    text-justify: center;
-    text-align: center;
-    font-size: 40px;
-    background-size: cover;
-    color: #126567;
-    background-color: white;
-}
-#linkdedin {
-    height: fit-content;
-    width: fit-content;
-    text-justify: center;
-    text-align: center;
-    font-size: 40px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #2867B2;
-    background-color: white;
-}
-#twitter {
-    height: fit-content;
-    width: fit-content;
-    text-justify: center;
-    text-align: center;
-    font-size: 40px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #1DA1F2;
-    background-color: white;
-}
-#facebook {
-    height: fit-content;
-    width: fit-content;
-    text-justify: center;
-    text-align: center;
-    font-size: 40px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #3b5998;
-    background-color: white;
+
+
 }
 @media(min-width:500px) {
     .container {
