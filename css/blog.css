@@ -26,6 +26,7 @@ button {
 a.blog {
     text-decoration: none;
     font-size: 22px;
+    margin-bottom: 10vw;
     color: black;
 }
 
@@ -39,7 +40,7 @@ a:hover {
     height: auto;
 }
 
-.nestedGrid {
+.nested-Grid {
     display: grid;
     width: auto;
     grid-template-columns: 100%;
@@ -52,7 +53,7 @@ a:hover {
     margin-left: 5vw;
 }
 
-.nestedGrid>p {
+.nested-Grid>p {
     border: none;
 }
 
@@ -80,7 +81,7 @@ video {
 }
 
 @media(min-width:500px) {
-    .nestedGrid {
+    .nested-Grid {
         display: grid;
         width: auto;
         grid-template-columns: 30% auto;
@@ -96,19 +97,18 @@ video {
         width: 10vw;
         min-height: 30vh;
     }
-    .nestedGrid>p {
+    .nested-Grid>p {
         padding-right: 3vw;
-        ;
     }
 }
 
 @media(min-width:1200px) {
-    .nestedGrid {
+    .nested-Grid {
         display: grid;
         width: auto;
         grid-template-columns: 10% auto;
         grid-template-rows: 100%;
-        gap: 30vw;
+        gap: 40vw;
         justify-items: auto;
         margin-bottom: 10vh;
         margin-bottom: 3vh;
