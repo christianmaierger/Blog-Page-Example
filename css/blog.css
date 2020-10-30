@@ -1,7 +1,12 @@
-.card {
+.blog-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: auto;
     text-align: center;
+    width: auto;
+    max-width: 70vw;
+    height: fit-content;
+    border: 2px solid #e0b535;
+    padding-bottom: 2vw;
 }
 
 .title {
@@ -32,11 +37,6 @@ a.blog {
 button:hover,
 a:hover {
     opacity: 0.7;
-}
-
-.card {
-    min-width: 40vw;
-    height: auto;
 }
 
 .nested-Grid {
@@ -71,8 +71,8 @@ h4 {
 
 video {
     display: block;
-    height: 50%;
-    width: 50%;
+    height: auto;
+    width: 90%;
     border: 2px solid #e0b535;
     margin-top: 2vw;
     margin-left: auto;
@@ -85,17 +85,19 @@ video {
         width: auto;
         grid-template-columns: 30% auto;
         grid-template-rows: 100%;
-        gap: 25vw;
+        gap: 20vw;
         justify-items: auto;
         margin-bottom: 10vh;
         margin-bottom: 3vh;
         margin-right: 5vw;
         margin-left: 5vw;
     }
-    .card {
-        width: auto;
+    .blog-card {
+        height: auto;
         min-height: 25vh;
-        max-width: 10vw;
+        width: 100%;
+        max-width: 50vw;
+        min-width: 30vw;
     }
     .nested-Grid>p {
         padding-right: 3vw;
@@ -115,7 +117,7 @@ video {
         margin-right: 5vw;
         margin-left: 5vw;
     }
-    .card {
+    .blog-card {
         width: auto;
         max-width: 35vw;
         min-height: 8vh;

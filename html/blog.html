@@ -12,18 +12,18 @@
 <body>
     <div class="container">
         <div class="header box">
-            <i class="fas fa-archway"></i>
+            <i id="home" class="fas fa-archway" onclick="window.open(this.href='../index.html' ) "></i>
         </div>
-        <div class="sidebar box">
+        <div class="sidebar box ">
             <h1>Blog Posts</h1>
-            <a href="blog.html">Most Recent Post</a>
-            <a href="blog.html">Post Of The Month</a>
-            <a href="blog.html">Editors Choice</a>
+            <a href="html/blog.html ">Most Recent Post</a>
+            <a href="html/blog.html ">Post Of The Month</a>
+            <a href="html/blog.html ">Editors Choice</a>
         </div>
         <div class="content box">
             <h2>Content</h2>
             <div class="nested-Grid">
-                <div class="card">
+                <div class="blog-card">
                     <img id="avatar" src="../images/avatar.jpg" alt="Picture of Blog Author">
                     <h1>John Doe</h1>
                     <p class="title">Information About Title</p>
@@ -36,10 +36,10 @@
                 </div>
                 <div id="h3-text">
                     <h3>Biography Info</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
+                    <blockquote cite="http://www.worldwildlife.org/who/index.html">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet. <b>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</b> At vero
+                        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </blockquote>
                 </div>
             </div>
             <h4> Blog Entry</h4>
@@ -63,10 +63,10 @@
 
         <div class="footer box">
             <div class="flex-buttons ">
-                <i class="fab fa-xing " id="xing " onclick="window.open(this.href='https://xing.com' ) "></i>
-                <i class="fab fa-linkedin " id="linkdedin " onclick="window.open(this.href='https://linkedin.com' ) "></i>
-                <i class="fab fa-twitter-square " id="twitter " onclick="window.open(this.href='https://twitter.com' ) "></i>
-                <i class="fab fa-facebook-square " id="facebook " onclick="window.open(this.href='https://facebook.com' ) "></i>
+                <i class="fab fa-xing " id="xing" onclick="window.open(this.href='https://xing.com' ) "></i>
+                <i class="fab fa-linkedin " id="linkdedin" onclick="window.open(this.href='https://linkedin.com' ) "></i>
+                <i class="fab fa-twitter-square " id="twitter" onclick="window.open(this.href='https://twitter.com' ) "></i>
+                <i class="fab fa-facebook-square " id="facebook" onclick="window.open(this.href='https://facebook.com' ) "></i>
             </div>
         </div>
     </div>

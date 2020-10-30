@@ -1,0 +1,63 @@
+        #home {
+            color: #1E90FF;
+            font-size: 70px;
+            padding-top: 4vw;
+            padding-left: 4vw;
+        }
+        
+        .flex-buttons {
+            display: flex;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            padding-left: 3vw;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 0.5vw;
+        }
+        
+        #xing {
+            height: fit-content;
+            width: fit-content;
+            text-justify: center;
+            text-align: center;
+            font-size: 40px;
+            background-size: cover;
+            color: #126567;
+            background-color: white;
+        }
+        
+        #linkdedin {
+            height: fit-content;
+            width: fit-content;
+            text-justify: center;
+            text-align: center;
+            font-size: 40px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #2867B2;
+            background-color: white;
+        }
+        
+        #twitter {
+            height: fit-content;
+            width: fit-content;
+            text-justify: center;
+            text-align: center;
+            font-size: 40px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #1DA1F2;
+            background-color: white;
+        }
+        
+        #facebook {
+            height: fit-content;
+            width: fit-content;
+            text-justify: center;
+            text-align: center;
+            font-size: 40px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #3b5998;
+            background-color: white;
+        }

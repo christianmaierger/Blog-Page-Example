@@ -1,6 +1,6 @@
 @import "index.css";
 @import "blog.css";
-@import "buttons-and_logo.css";
+@import "buttons-and-logo.css";
 body {
     margin: 0;
 }
@@ -21,6 +21,7 @@ body {
 .sidebar {
     grid-area: sd;
     background: #fdcd3b;
+    padding-right: 2vw;
 }
 
 .content {
