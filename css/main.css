@@ -46,8 +46,6 @@ body {
     padding-left: 2vw;
 }
 
-
-}
 @media(min-width:500px) {
     .container {
         display: grid;
@@ -56,23 +54,21 @@ body {
         grid-template-rows: 10% auto auto;
         grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
     }
-    
     .header {
         grid-area: hd;
         background: linear-gradient(110deg, #fdcd3b 23%, #1E90FF 33%);
     }
-    
     .sidebar {
         grid-area: sd;
         border-top: 4px solid #e0b535;
         background: #fdcd3b;
     }
-    
     .footer {
         grid-area: ft;
         background: #e0b535;
     }
 }
+
 @media(min-width:1200px) {
     .container {
         display: grid;
@@ -81,7 +77,6 @@ body {
         grid-template-rows: 10% auto;
         grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
     }
-    
     .header {
         grid-area: hd;
         background: linear-gradient(110deg, #fdcd3b 15%, #1E90FF 25%);

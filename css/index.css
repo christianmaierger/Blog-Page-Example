@@ -22,7 +22,7 @@
             }
             
             #main-img {
-                width: 90vw;
+                width: 80vw;
                 height: auto;
                 border: 2px solid #e0b535;
             }
@@ -36,7 +36,7 @@
                 height: auto;
             }
             
-            #text-content {
+            .text-content {
                 margin-bottom: 2vh;
             }
             
@@ -90,7 +90,7 @@
                 }
                 .card {
                     min-width: 15vw;
-                    max-width: 10vw;
+                    max-width: 20vw;
                     min-height: 70vw;
                     margin: 2vw;
                 }
